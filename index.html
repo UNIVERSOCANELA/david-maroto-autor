@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="David Maroto Avilés (DMA), escritor, narrador y fundador de Universo Canela. Libros y narraciones.">
   <title>David Maroto · Escritor y narrador</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/estilos.css?v=biografia">
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -24,6 +24,7 @@
         <h1 id="titulo">David<br>Maroto<span>.</span></h1>
         <p class="lead">Historias de infancia, memoria y cocina. Del papel a la voz.</p>
         <a class="button" href="#libros">Explorar los libros <span aria-hidden="true">↘</span></a>
+        <a class="hero-bio" href="#biografia">Sobre David <span aria-hidden="true">↓</span></a>
       </div>
       <figure>
         <img src="imagenes/autor/david-maroto.jpg" alt="David Maroto ante una biblioteca" fetchpriority="high">
@@ -64,10 +65,18 @@
         </div>
       </div>
     </section>
-    <section id="biografia" class="wrap split">
-      <h2>Biografía</h2>
-      <div><p>David Maroto Avilés, que firma como DMA, es escritor, narrador y fundador de Universo Canela. En sus libros y relatos, la memoria de la infancia vuelve a través de la cocina, los aromas y las escenas de cada día.</p>
-      <a href="https://www.universocanela.online/">Visitar el blog de Universo Canela <span aria-hidden="true">↗</span></a></div>
+    <section id="biografia" class="wrap split biography" aria-labelledby="titulo-biografia">
+      <div>
+        <h2 id="titulo-biografia">Biografía</h2>
+        <p class="bio-subtitle">De los fogones a las palabras</p>
+        <a href="https://www.universocanela.online/">Visitar el blog de Universo Canela <span aria-hidden="true">↗</span></a>
+      </div>
+      <div>
+        <p class="bio-intro">David Maroto Avilés (DMA) nació en Reus. Es escritor y narrador, y ha trabajado en gastronomía. En sus libros, acciones tan corrientes como encender un fogón o preparar algo de comer pueden traer de vuelta una casa, una voz o una escena de infancia.</p>
+        <p>En <em>El niño que huele a canela</em>, publicado por Diversidad Literaria, vuelve sobre sus años en centros de menores y sobre el lugar que la cocina y la escritura han ocupado en su vida. El libro se nutre de la memoria personal y la trabaja con libertad literaria.</p>
+        <p>En sus novelas, esa relación con la cocina toma formas distintas. En <em>La receta que nadie escribió</em>, Tomás sigue el rastro de cuatro ingredientes para recordar a la mujer que lo acogió. En <em>El grito en las migas</em>, Alejo se pregunta qué vida quiere construir más allá de la fonda familiar donde aprendió el oficio.</p>
+        <p>David fundó Universo Canela, donde reúne su trabajo literario, la narración y las colaboraciones editoriales. En Radio Canela presta su voz a relatos de otros autores, como <em>El marginal</em>, de Andrés Adolfo Belozercovsky.</p>
+      </div>
     </section>
     <section id="audio" class="voice">
       <div class="wrap split">
@@ -75,15 +84,27 @@
         <div><p>Relatos y lecturas en voz de David Maroto.</p><a href="https://www.universocanela.online/p/radio-canela.html">Escuchar Radio Canela <span aria-hidden="true">↗</span></a><br><a href="https://open.spotify.com/show/0OodAFUQtDjPXOKCpn0pIA">Podcast de Universo Canela en Spotify ↗</a></div>
       </div>
     </section>
-    <section id="colaboraciones" class="wrap split">
-      <h2>Colaboraciones</h2>
-      <div>
-        <h3>Colaboraciones sonoras</h3>
-        <img class="project-cover" src="imagenes/colaboraciones/el-marginal.jpg" alt="Portada de El marginal" loading="lazy"><p><cite>El marginal</cite>, de Andrés Adolfo Belozercovsky, con narración de DMA.</p>
-        <h3>Proyectos editoriales</h3>
-        <p><cite>Memorias de una vida sencilla</cite>, de Julia Avilés Martínez. <a href="https://www.amazon.es/dp/B0G6JZJCYZ">Ficha en Amazon ↗</a></p>
-        <img class="project-cover" src="imagenes/colaboraciones/susurros.jpg" alt="Portada de Susurros. Caligrafía del alma" loading="lazy"><p><cite>Susurros. Caligrafía del alma</cite>, de María del Carmen O. D. S. Maquetación en curso a cargo de DMA.</p>
+    <section id="colaboraciones" class="wrap collaborations" aria-labelledby="titulo-colaboraciones">
+      <h2 id="titulo-colaboraciones">Colaboraciones</h2>
+      <div class="project-grid">
+        <article>
+          <img class="project-cover" src="imagenes/colaboraciones/el-marginal.jpg" alt="Portada de El marginal" loading="lazy">
+          <div>
+            <p class="eyebrow">Narración</p>
+            <h3>El marginal</h3>
+            <p>Relato de Andrés Adolfo Belozercovsky, narrado por DMA.</p>
+          </div>
+        </article>
+        <article>
+          <img class="project-cover" src="imagenes/colaboraciones/susurros.jpg" alt="Portada de Susurros. Caligrafía del alma" loading="lazy">
+          <div>
+            <p class="eyebrow">Maquetación</p>
+            <h3>Susurros. Caligrafía del alma</h3>
+            <p>Obra de María del Carmen O. D. S. Maquetación en curso a cargo de DMA.</p>
+          </div>
+        </article>
       </div>
+      <p class="editorial-link"><cite>Memorias de una vida sencilla</cite>, de Julia Avilés Martínez. <a href="https://www.amazon.es/dp/B0G6JZJCYZ">Ficha en Amazon ↗</a></p>
     </section>
     <div class="wrap bottom">
       <section id="prensa">
