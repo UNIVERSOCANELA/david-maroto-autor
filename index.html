@@ -6,6 +6,20 @@
   <meta name="description" content="David Maroto Avilés (DMA), escritor, narrador y fundador de Universo Canela. Libros y narraciones.">
   <title>David Maroto · Escritor y narrador</title>
   <link rel="stylesheet" href="css/estilos.css?v=biografia">
+  <style>
+    .hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:.65rem 1rem}
+    .hero-actions .hero-bio{margin:0}
+    .hero-listen{margin-top:1.15rem;max-width:25rem}
+    .hero-listen summary{width:fit-content;cursor:pointer;border:1px solid var(--rust);padding:.55rem .85rem;color:var(--rust);font-weight:650;font-size:.88rem}
+    .hero-listen summary:focus-visible{outline:2px solid var(--rust);outline-offset:4px}
+    .hero-listen[open] summary{margin-bottom:.65rem}
+    .hero-listen audio{display:block;width:100%}
+    .hero-listen p{margin:.35rem 0 0;color:var(--muted);font-size:.8rem}
+    @media (prefers-reduced-motion:no-preference){
+      .hero figure{animation:portrait-reveal 800ms ease-out both}
+      @keyframes portrait-reveal{from{opacity:0}to{opacity:1}}
+    }
+  </style>
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -23,8 +37,16 @@
         <p class="eyebrow">Escritor y narrador</p>
         <h1 id="titulo">David<br>Maroto<span>.</span></h1>
         <p class="lead">Historias de infancia, memoria y cocina. Del papel a la voz.</p>
-        <a class="button" href="#libros">Explorar los libros <span aria-hidden="true">↘</span></a>
-        <a class="hero-bio" href="#biografia">Sobre David <span aria-hidden="true">↓</span></a>
+        <div class="hero-actions">
+          <a class="button" href="#libros">Explorar mis libros <span aria-hidden="true">↘</span></a>
+          <a class="hero-bio" href="#audio">Audiolibros completos <span aria-hidden="true">↓</span></a>
+          <a class="hero-bio" href="#biografia">Sobre David <span aria-hidden="true">↓</span></a>
+        </div>
+        <details class="hero-listen">
+          <summary>Escuchar a David</summary>
+          <audio controls preload="none" aria-label="Muestra de la voz de David Maroto" src="audio/david-maroto-muestra.mp3"></audio>
+          <p>Fragmento de la presentación de Universo Canela · 22 s</p>
+        </details>
       </div>
       <figure>
         <img src="imagenes/autor/retrato-biblioteca.jpg" alt="David Maroto con gafas, ante una biblioteca" width="1050" height="1050" style="filter:grayscale(.9) sepia(.44) brightness(1.08);aspect-ratio:1;object-position:center" fetchpriority="high">
